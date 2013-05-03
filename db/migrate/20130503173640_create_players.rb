@@ -3,7 +3,7 @@ class CreatePlayers < ActiveRecord::Migration
     create_table :players do |t|
       t.string :name
       t.string :company
-      t.integer :score
+      t.integer :score, :default => 1500
       t.string :email
 
       t.timestamps
