@@ -2,9 +2,9 @@ class CreatePlayers < ActiveRecord::Migration
   def change
     create_table :players do |t|
       t.string :name
-      t.text :email
-      t.text :company
+      t.string :company
       t.integer :score
+      t.string :email
 
       t.timestamps
     end

@@ -3,9 +3,9 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Email</th>
     <th>Company</th>
     <th>Score</th>
+    <th>Email</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,9 +14,9 @@
 <% @players.each do |player| %>
   <tr>
     <td><%= player.name %></td>
-    <td><%= player.email %></td>
     <td><%= player.company %></td>
     <td><%= player.score %></td>
+    <td><%= player.email %></td>
     <td><%= link_to 'Show', player %></td>
     <td><%= link_to 'Edit', edit_player_path(player) %></td>
     <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
