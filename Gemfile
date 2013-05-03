@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem "flatui-rails"
 gem 'pg'
-gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -13,6 +12,8 @@ end
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
+  gem "better_errors"
+  gem "unicorn"
 end
 
 group :development do
