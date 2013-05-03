@@ -1,7 +1,4 @@
 class MatchesController < ApplicationController
-  def index
-  end
-
   def new
     @match = Match.new
   end
@@ -10,7 +7,7 @@ class MatchesController < ApplicationController
     @match = Match.new(params[:match])
     
     if @match.save
-      redirect_to @match, notice: 'Match was successfully created.' }
+      redirect_to @match, notice: 'Match was successfully created.'
     else
       render action: "new" 
     end

@@ -8,7 +8,6 @@ class BracketsController < ApplicationController
 
     if @bracket.save
       redirect_to @bracket, notice: 'Bracket was successfully created.'
-        format.json { render json: @bracket, status: :created, location: @bracket }
     else
       render action: "new"
     end
